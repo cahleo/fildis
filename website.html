@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Filipino sa Iba't Ibang Disiplina</title>
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #2d0033; /* dark purple */
+    color: #f3e5f5; /* light purple */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .container {
+    text-align: center;
+    border: 2px solid #b388eb;
+    padding: 40px;
+    border-radius: 20px;
+    background-color: #4a0072;
+    width: 90%;         
+    max-width: 350px;    
+
+  }
+
+  h1 {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+
+  .button {
+    display: block;
+    margin: 15px auto;
+    padding: 10px 25px;
+    background-color: #ce93d8;
+    color: #420642;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold; 
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+
+  .button:hover {
+    background-color: #ba68c8;
+  }
+
+  .page {
+    display: none;
+  }
+
+  .page.active {
+    display: block;
+  }
+
+  .back-button {
+    margin-top: 20px;
+    background-color: #9575cd;
+  }
+
+  /* NEW: visited link styling */
+  a:link {
+    color: white;
+  }
+
+  a:visited {
+    color: black;
+  }
+</style>
+
+</head>
+<body>
+  <div class="container">
+    <!-- Home View -->
+    <div id="home" class="page active">
+      <h1>Filipino sa Iba't Ibang Disiplina</h1>
+      <div class="button" onclick="showPage('fildis')">Fildis</div>
+      <div class="button" onclick="showPage('modules')">Module</div>
+      <div class="button" onclick="showPage('members')">Members</div>
+    </div>
+
+    <!-- Fildis Page -->
+    <div id="fildis" class="page">
+      <h1>Ano ang Fildis?</h1>
+      <p style="font-family: 'Times New Roman', Times, serif;">
+            Ang FILDIS ay isang praktikal na kursong nagpapalawak at nagpapalalim sa kasanayan sa malalim at mapanuring pagbasa, pagsulat, at pananaliksik
+            sa wikang Filipino sa iba’t ibang larangan, sa konteksto ng kontemporaryong sitwasyon at mga pangangailangan ng bansa at ng mga mamamayang Pilipino. 
+            Nakatuon ang kursong ito sa makrokasanayang pagbasa at pagsulat, gamit ang mga makabuluhang pananaliksik sa wikang Filipino, bilang lunsaran ng pagsasagawa ng pananaliksik 
+            na nakaugat sa mga suliranin at realidad ng mga komunidad ng mga mamamayan sa bansa at maging sa komunidad ng mga Pilipino sa iba pang bansa. 
+            Saklaw rin ng kursong ito ang paglinang sa kasanayang pagsasalita, partikular sa presentasyon ng pananaliksik sa iba’t ibang porma at venue.
+</p>
+
+      <div class="button back-button" onclick="showPage('home')">Back</div>
+    </div>
+
+    <!-- Modules Page -->
+      <div id="modules" class="page">
+  <h1>Mga Module</h1>
+
+  <div style="display: flex; flex-direction: column; align-items: center; font-family: 'Times New Roman', Times, serif;">
+    <a href="https://docs.google.com/document/d/1996e3CsBr4B9Ian9vyb2kJvYI1AChJrG/edit?usp=drive_link&ouid=100626578026886729382&rtpof=true&sd=true" style="display: block; margin: 8px 0;" >PRELIM</a>
+    <a href="https://docs.google.com/document/d/1AIAViVIBi0neeY0RPLgLoImRdW9EpVel/edit?usp=drive_link&ouid=100626578026886729382&rtpof=true&sd=true" style="display: block; margin: 8px 0;" >MIDTERM</a>
+    <a href="https://drive.google.com/file/d/1Hk-azC3DauClJRdIKZxsR4FZPu96Hx-o/view?usp=drive_link" style="display: block; margin: 8px 0;" >WEEK 13</a>
+    <a href="https://drive.google.com/file/d/1gz0iX_OEyJxSncK7rozSTumH4akl46zn/view?usp=drive_link" style="display: block; margin: 8px 0;" >WEEK 14</a>
+    <a href="https://drive.google.com/file/d/1JwR7X4HhX3AOe3FzyllhT8SQHe_HNTrt/view?usp=drive_link" style="display: block; margin: 8px 0;" >WEEK 15</a>
+    <a href="https://drive.google.com/file/d/1oc7437ChqoDqX7kpjGBk3xIB0IHy44Km/view?usp=drive_link" style="display: block; margin: 8px 0;" >WEEK 16</a>
+    <a href="https://drive.google.com/file/d/1T1uomNDeykXaSt0XZ4q0HEz0etfnM4et/view?usp=drive_link" style="display: block; margin: 8px 0;" >WEEK 17</a>
+  </div>
+
+      <div class="button back-button" onclick="showPage('home')">Back</div>
+    </div>
+
+    <!-- Members Page -->
+    <div id="members" class="page">
+      <h1>Mga Miyembro</h1>
+      <p style="font-family: 'Times New Roman', Times, serif;"> BSIT-2223</p>
+      <p style="font-family: 'Times New Roman', Times, serif;"> REONICO, CATHLYN</p>
+      <p style="font-family: 'Times New Roman', Times, serif;"> REGALA, JOVEN</p>
+      <p style="font-family: 'Times New Roman', Times, serif;"> MAGLINTE, CHRISTIAN HANS</p>
+      <p style="font-family: 'Times New Roman', Times, serif;"> HALAYAHAY, DAENIELLE</p>
+      <p style="font-family: 'Times New Roman', Times, serif;"> ANDAYA, EDGAR ROY</p>
+      <p style="font-family: 'Times New Roman', Times, serif;"> DENOSO, JOHN ALBERT</p>
+      <div class="button back-button" onclick="showPage('home')">Back</div>
+    </div>
+  </div>
+
+  <script>
+    function showPage(id) {
+      const pages = document.querySelectorAll('.page');
+      pages.forEach(page => page.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
+</body>
+</html>
